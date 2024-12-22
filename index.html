@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualiser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Sorting Visualiser</h1>
+    <label for="size" id="label">Select the size Of array</label>
+    <input type="range" id="size" min="5" max="30" onchange="Change()" value="10" class="sort-btn">
+    <div class="selector">
+        <button onclick="Adjust(1)" class="sort-btn">Bubble Sort</button>
+        <button onclick="Adjust(2)" class="sort-btn">Selection Sort</button>
+        <button onclick="Adjust(3)" class="sort-btn">Insertion Sort </button>
+        <button onclick="Adjust(4)" class="sort-btn">Merge Sort</button>
+    </div>
+    <div id="container"></div>
+    <hr>
+    <div>
+        <button onclick="Init()" class="sort-btn">INIT</button>
+        <!-- <button onclick="Play()">PLAY</button> -->
+    </div>
+    <div class="complexity">
+        <h2>Algorithm Details</h2>
+        <p><strong>Time Complexity:</strong> <span id="time-complexity"></span></p>
+        <p><strong>Space Complexity:</strong> <span id="space-complexity"></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

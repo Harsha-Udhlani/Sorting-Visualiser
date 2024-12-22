@@ -1,0 +1,49 @@
+#container {
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    margin: 20px;
+
+
+}
+
+.sort-btn {
+    background-color: aquamarine;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+
+
+}
+
+.sort-btn:hover {
+    background-color: magenta;
+    color: black;
+
+}
+
+.sort-btn:active {
+    background-color: yellowgreen;
+    color: bisque;
+}
+
+#label {
+    font-size: 20px;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(234, 131, 131, 0.951);
+    color: white;
+
+
+}
+
+.bar {
+    margin: 1px;
+    width: 10px;
+    background-color: rgb(119, 70, 9);
+}
